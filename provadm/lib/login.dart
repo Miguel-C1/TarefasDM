@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
+import 'package:provadm/url.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -16,7 +18,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Future<void> _login() async {
     final response = await http.post(
-      Uri.parse('https://demo.mockable.io/login'), // Substituir pelo endpoint correto
+      Uri.parse('${ApiEndpoint.mockableBaseUrl.url}login'), // Substituir pelo endpoint correto
       body: json.encode({
         'username': _nameController.text,
         'password': _passwordController.text,
@@ -29,9 +31,10 @@ class _LoginScreenState extends State<LoginScreen> {
       });
 
       // Navegar para a Tela 2 e passar o token
-      Navigator.pushReplacementNamed(context, '/tela2', arguments: _token);
-    } else {
-      // Tratar erro
+    if (mounted) {
+        Navigator.pushReplacementNamed(context, '/nota', arguments: _token);
+      }
+      
     }
   }
 

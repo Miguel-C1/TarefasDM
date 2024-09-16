@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provadm/login.dart';
 import 'package:provadm/home.dart';
+import 'package:provadm/nota.dart';
 
 
 void main() {
@@ -17,6 +18,7 @@ class MainApp extends StatelessWidget {
       routes: {
         '/': (context) => const HomeScreen(),
         '/login': (context) => const LoginScreen(),
+        '/nota': (context) => TelaNotas(token: ModalRoute.of(context)!.settings.arguments as String),
       },
     );
   }
