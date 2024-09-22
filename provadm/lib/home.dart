@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/logo.png', width: 150, height: 150), // Adicionar o logo
+            Image.asset('logo.jpg', width: 150, height: 150),
             const SizedBox(height: 20),
             ElevatedButton(
               child: const Text("Acessar Login"),

@@ -1,0 +1,52 @@
+[
+  {
+    "matricula": "123",
+    "nome": "João",
+    "nota": 95
+  },
+  {
+    "matricula": "456",
+    "nome": "Maria",
+    "nota": 100
+  },
+  {
+    "matricula": "789",
+    "nome": "Carlos",
+    "nota": 45
+  },
+  {
+    "matricula": "321",
+    "nome": "Ana",
+    "nota": 88
+  },
+  {
+    "matricula": "654",
+    "nome": "Pedro",
+    "nota": 73
+  },
+  {
+    "matricula": "987",
+    "nome": "Sofia",
+    "nota": 50
+  },
+  {
+    "matricula": "147",
+    "nome": "Marcos",
+    "nota": 100
+  },
+  {
+    "matricula": "258",
+    "nome": "Clara",
+    "nota": 61
+  },
+  {
+    "matricula": "369",
+    "nome": "Lucas",
+    "nota": 59
+  },
+  {
+    "matricula": "741",
+    "nome": "Beatriz",
+    "nota": 82
+  }
+]
